@@ -23,6 +23,8 @@ def process_acls(intput_acls):
                 all_acls_dict[match.group("acl_name")] = []
             all_acls_dict[match.group("acl_name")].append(acl)
 
+    return all_acls_dict
+
 
 def main():
     parser = ArgumentParser(description='Arguments for running asa_acl_add_log')
